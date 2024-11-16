@@ -31,14 +31,14 @@
         };
 
         try {
-            const response = await fetch('https://script.google.com/macros/s/AKfycbz84TfgViUzAw-zQeQ3AuSaiickPzkZVIvQ-V9T-6fp0H_euSvC-KlIjuaEa49KtT-1RA/exec', {
+           const response = await fetch('https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbz84TfgViUzAw-zQeQ3AuSaiickPzkZVIvQ-V9T-6fp0H_euSvC-KlIjuaEa49KtT-1RA/exec', {
     method: 'POST',
     headers: { 
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify(formData),
-    mode: 'no-cors'  // Disable CORS check
+    body: JSON.stringify(formData)
 });
+
 
 
             // Display success message
